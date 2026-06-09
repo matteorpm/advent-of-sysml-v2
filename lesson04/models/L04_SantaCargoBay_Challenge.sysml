@@ -1,4 +1,4 @@
-package L04_SantaCargoBay_Solution {
+package L04_SantaCargoBay_Challenge {
     part def Sleigh {    
         part cargoBay {
             item payload : Bag;

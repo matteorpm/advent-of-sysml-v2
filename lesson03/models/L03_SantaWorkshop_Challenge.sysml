@@ -2,13 +2,28 @@
 private import ScalarValues::*;
 
 part def SantaWorkshop {
-// Work areas of the workshop
-part assemblyLine {doc /* Where toys are assembled. */ part supervisor = headElf;}part qualityControl { doc /* Quality checking station. */ }part packagingArea { doc /* Gift wrapping and packaging. */ }
+        // Work areas of the workshop
+        part assemblyLine {
+                doc 
+                /* Where toys are assembled. */ 
+                part supervisor = headElf;
+        }
+        part qualityControl { 
+                doc 
+                /* Quality checking station. */ 
+        }
+        part packagingArea { 
+                doc 
+                /* Gift wrapping and packaging. */ 
+        }
 
 // Elves working in the workshop
-part headElf;
+part headElf : Elf;
 
-part albert {  attribute skillType : SkillType = SkillType::assembly;attribute skillLevel : Real := 50.0; }
+part albert : Elf {  
+        attribute skillType : SkillType = SkillType::assembly;
+        attribute skillLevel : Real := 50.0; 
+}
         part betty 
 {attribute skillType : SkillType = SkillType::assembly;
                 attribute skillLevel : Real := 100.0; }

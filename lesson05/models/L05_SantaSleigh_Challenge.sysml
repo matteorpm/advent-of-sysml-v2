@@ -9,7 +9,7 @@ package L05_SantaSleigh_Challenge {
         // a magical cargo bay that can hold an arbitrary number of ordinary bags.
         // We want to be able to access the payload of the cargo bay rgardless of
         // the configuration.
-        part cargoBay;
+        part cargoBay : CargoBay;
         part dashboard;
 
         // TASK 2:
@@ -41,4 +41,6 @@ package L05_SantaSleigh_Challenge {
         // Add attributes to describe the weight and the name of the reindeer
         // (use constant if applicable).
     }
+
+    abstract part def CargoBay
 }

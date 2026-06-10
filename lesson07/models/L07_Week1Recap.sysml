@@ -77,7 +77,7 @@ package L07_Wee1Recap {
 
         part charlie : Elf {
             attribute redefines skillType := SkillType::quality;
-            attribute redefines skillLevel ;= 100.0;
+            attribute redefines skillLevel := 100.0;
         }
 
         part diana : Elf {
@@ -87,7 +87,7 @@ package L07_Wee1Recap {
 
         part edward : Elf {
             attribute redefines skillType := SkillType::packaging;
-            attribute redefines skillLevel := 100.0
+            attribute redefines skillLevel := 100.0;
         }
 
         part fiona : Elf {

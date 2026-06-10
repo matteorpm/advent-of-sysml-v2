@@ -2,6 +2,10 @@ package L07_Wee1Recap {
     private import ScalarValues::*;
 
     part def SantaSleigh {
+        part cockpit {
+            doc /* This is where Santa sits. */
+            ref item driver = santa;
+        }
         part cargoBay : CargoBay;
         part dashboard : NaughtyNiceDashboard;
     
@@ -18,13 +22,27 @@ package L07_Wee1Recap {
     ref part dasher subsets reindeer [1] {
         constant attribute redefines noseColor := Color::orange;
     }
-    ref part dancer subsets reindeer [1];
-    ref part prancer subsets reindeer [1];
-    ref part vixen subsets reindeer [1];
-    ref part comet subsets reindeer [1];
-    ref part cupid subsets reindeer [1];
-    ref part donner subsets reindeer [1];
-    ref part blitzen subsets reindeer [1];
+    ref part dancer subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::yellow;
+    }
+    ref part prancer subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::green;
+    }
+    ref part vixen subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::blue;
+    }
+    ref part comet subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::indigo;
+    }
+    ref part cupid subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::violet;
+    }
+    ref part donner subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::silver;
+    }
+    ref part blitzen subsets reindeer [1] {
+        constant attribute redefines noseColor := Color::gold;
+    }
     ref part rudolph subsets reindeer [1] {
         constant attribute redefines noseColor := Color::red;
         attribute redefines energyLevel := 200.0;
@@ -55,6 +73,36 @@ package L07_Wee1Recap {
         part betty : Elf {
             attribute redefines skillType := SkillType::assembly;
             attribute redefines skillLevel := 100.0;
+        }
+
+        part charlie : Elf {
+            attribute redefines skillType := SkillType::quality;
+            attribute redefines skillLevel ;= 100.0;
+        }
+
+        part diana : Elf {
+            attribute redefines skillType := SkillType::quality;
+            attribute redefines skillLevel := 100.0;
+        }
+
+        part edward : Elf {
+            attribute redefines skillType := SkillType::packaging;
+            attribute redefines skillLevel := 100.0
+        }
+
+        part fiona : Elf {
+            attribute redefines skillType := SkillType::packaging;
+            attribute redefines skillLevel := 100.0;
+        }
+
+        part george : Elf {
+            attribute redefines skillType := SkillType::assembly;
+            attribute redefines skillLevel := 150.0;
+        }
+
+        part helen : Elf {
+            attribute redefines skillType := SkillType::quality;
+            attribute redefines skillLevel := 150.0;
         }
     }
 

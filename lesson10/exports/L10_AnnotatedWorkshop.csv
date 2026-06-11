@@ -1,9 +1,4 @@
-Name,Qualified Name,Type,Locale,Documentation
-ElfWorkshop,L10_AnnotatedWorkshop::ElfWorkshop,PartDefinition,en_US,"Central facility for toy production and sleigh preparation at the North Pole. 
-This model demonstrates full use of annotations for a workshop system."
-ElfWorkshop,L10_AnnotatedWorkshop::ElfWorkshop,PartDefinition,hu_HU,A Mikulás műhelye a játékgyártás és szánkészítés központja az Északi-sarkon.
-elves,L10_AnnotatedWorkshop::ElfWorkshop::elves,PartUsage,None,Skilled workers managing workshop operations.
-materialStorage,L10_AnnotatedWorkshop::ElfWorkshop::materialStorage,PartUsage,en_US,Warehouse for storing raw materials and components used in toy production.
-materialStorage,L10_AnnotatedWorkshop::ElfWorkshop::materialStorage,PartUsage,lt_LT,"Sandėlis žaliavoms ir komponentams, naudojamiems žaislų gamyboje, saugoti."
-packagingArea,L10_AnnotatedWorkshop::ElfWorkshop::packagingArea,PartUsage,en_US,Dedicated space for wrapping and packaging finished toys for distribution.
-toyMachines,L10_AnnotatedWorkshop::ElfWorkshop::toyMachines,PartUsage,None,Automated machines for efficient toy assembly.
+comment_name,locale,body,owner,about
+namedEfficiencyComment,,Rate optimized for holiday demand peaks.,L10_AnnotatedWorkshop::ElfWorkshop::toyMachines,
+materialInventory,,Tracks inventory levels and reorder points for critical materials.,L10_AnnotatedWorkshop::ElfWorkshop::materialStorage,
+packagingStandards,,Ensures consistent branding and presentation across all products.,L10_AnnotatedWorkshop::ElfWorkshop::packagingArea,

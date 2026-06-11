@@ -3,6 +3,8 @@ package L09_SantaWorkshop {
         
         // Install Sysand package for PLEML from Sysand and uncomment line below.
         // private import PLEML::*;
+        // pleml dependency could not be resolved from the current Sysand index.
+        // Keeping this import commented out so the model remains valid.
 
         part def SantaWorkshop {
                 // Work areas of the workshop
